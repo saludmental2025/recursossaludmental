@@ -1,5 +1,6 @@
 <!DOCTYPE html>  <html lang="es">  
-<head>          
+
+    <head>          
     <meta charset="UTF-8">          
     <meta name="viewport" content="width=device-width, initial-scale=1.0">          
     <title>Recursos para la Salud Mental</title>          
@@ -53,7 +54,8 @@
         max-width: 900px;        
         margin-left: auto;        
         margin-right: auto;        
-        text-align: center;    
+        text-align: center;
+        overflow-wrap: break-word; /* ← ESTA LÍNEA SE AÑADIÓ PARA QUE LOS TÍTULOS NO SE CORTEN */    
     }        
     
     .section-title {        
@@ -67,7 +69,7 @@
         cursor: pointer;        
         transition: color 0.3s ease;    
         position: relative;    
-        white-space: nowrap; /* Esto evita que el texto se divida en dos líneas */
+        white-space: nowrap;    
     }    
     
     .section-title::before,    
@@ -164,7 +166,106 @@
         text-align: justify;
     }
 </style>    
-</head>
+    </head>
+    
+<head>          
+    <meta charset="UTF-8">          
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">          
+    <title>Recursos para la Salud Mental</title>          
+
+    <!-- TIPOGRAFÍA QUICKSAND -->    
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+
+<style>          
+    body {          
+        font-family: 'Quicksand', sans-serif;          
+        background-color: #ffffff;         
+        color: #333;          
+        margin: 0;          
+        padding: 0;          
+        text-align: center;        
+    }          
+    
+    header {          
+        background-color: #3a8c55;          
+        color: white;          
+        text-align: center;          
+        padding: 1.5em;          
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);          
+    }          
+    
+    nav {          
+        display: flex;          
+        flex-wrap: wrap;           
+        justify-content: center;          
+        background-color: #3a8c55;          
+        padding: 5px 0;          
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);          
+    }      
+    
+    nav a {        
+        color: white;        
+        padding: 6px 12px;        
+        text-decoration: none;        
+        font-size: 14px;        
+        margin: 4px 5px;        
+        border-radius: 4px;        
+        transition: background-color 0.3s ease;        
+    }        
+    
+    nav a:hover {        
+        background-color: #2f7244;        
+    }        
+    
+    .container {        
+        padding: 30px 20px;        
+        max-width: 900px;        
+        margin-left: auto;        
+        margin-right: auto;        
+        text-align: center;    
+    }        
+    
+    .section-title {        
+        font-size: 1.8em;        
+        color: #3a8c55;        
+        margin-bottom: 15px;        
+        border-bottom: 2px solid #a7d3b8;        
+        padding-bottom: 5px;        
+        text-transform: uppercase;        
+        text-align: center;        
+        cursor: pointer;        
+        transition: color 0.3s ease;    
+        position: relative;    
+        white-space: nowrap; /* Esto evita que el texto se divida en dos líneas */
+    }    
+    
+    .section-title::before,    
+    .section-title::after {    
+        content: "🌸";    
+        margin: 0 8px;    
+        display: inline-block;    
+        vertical-align: middle;    
+        transform: translateY(-2px);    
+        transition: transform 0.3s ease;    
+    }    
+    
+    .section-title:hover {    
+        color: #2f7244;    
+    }    
+    
+    .section-title:hover::before,    
+    .section-title:hover::after {    
+        transform: scale(1.2);    
+    }    
+    
+    .section-title:active {    
+        color: #1b5e34;    
+    }    
+    
+
+
+
+    
 <body>  <header>  
     <h1>Recursos para la Salud Mental</h1>  
     <p>Ayuda, apoyo y herramientas para tu bienestar emocional</p>  
